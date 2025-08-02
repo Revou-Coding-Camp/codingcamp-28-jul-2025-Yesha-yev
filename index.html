@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <button onclick="location.href='#home'">Home</button>
+            <button onclick="location.href='#profile'">Our Profile</button>
+            <button onclick="location.href='#portfolio'">Portfolio</button>
+            <button onclick="location.href='#contact'">Message Us</button>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <h2 id="welcome-text">Hi, Welcome To Website</h2>
+        <p>Ini adalah website portofolio perusahaan kami.</p>
+    </section>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <h2>Our Profile</h2>
+        <div class="photo-banner">
+            <img src="Logo Banner.jpg" alt="Photo Banner" width="100%">
+        </div>
+        <div class="company-info">
+            <h3>About The Company</h3>
+            <p>Kami adalah perusahaan teknologi yang berfokus pada solusi digital dan inovasi untuk membantu masyarakat lebih produktif dan terhubung secara global.</p>
+
+            <h3>Vision</h3>
+            <p>Menjadi pelopor transformasi digital melalui produk yang bermanfaat dan inovatif.</p>
+
+            <h3>Mission</h3>
+            <ul>
+                <li>Memberikan solusi teknologi berkualitas tinggi.</li>
+                <li>Meningkatkan efisiensi dan produktivitas klien.</li>
+                <li>Berinovasi secara berkelanjutan.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="headquarters">
+        <h3>Our Headquarters</h3>
+        <div class="city-container">
+            <div class="city">
+                <div class="circle"></div>
+                <span>Jakarta</span>
+            </div>
+            <div class="city">
+                <div class="circle"></div>
+                <span>Bandung</span>
+            </div>
+            <div class="city">
+                <div class="circle"></div>
+                <span>Surabaya</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="contact-form">
+            <h3>Message Us</h3>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" required><br>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="Laki-laki" required>Laki-laki
+                <input type="radio" name="gender" value="Perempuan" required>Perempuan<br>
+
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" rows="4" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="output" id="output">
+            <p>Hasil input akan ditampilkan di sini.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Faiz Ulfia Sasmita</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>
